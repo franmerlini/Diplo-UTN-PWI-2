@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('./partials/head') %>
+</head>
+
+<body>
+    <header>
+        <%- include('./partials/header') %>
+    </header>
+
+    <main>
+        <div class="container-fluid pb-5 pt-5 bg-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col me-5">
+                        <h4>Dejanos tu mensaje</h4>
+                        <p>¿Tenés alguna pregunta, solicitud o sugerencia? Hacenos saber mediante el formulario a
+                            continuación. Te responderemos lo antes posible.</p>
+                        <br>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Tu nombre</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mail" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="mail">
+                            </div>
+                            <div class="mb-3">
+                                <label for="textarea" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="textarea" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary rounded-pill">Enviar mensaje</button>
+                        </form>
+                    </div>
+                    <div class="col ms-5">
+                        <h4>¡Te esperamos en nuestro showroom!</h4>
+                        <div class="map-container border border-primary border-3 rounded">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1352.7022902815631!2d-64.25768923143323!3d-31.348399038393175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ea42a4bfa5d%3A0x4908a5602883ec62!2sTienda%20Vogel!5e0!3m2!1ses!2sar!4v1628444712217!5m2!1ses!2sar"
+                                width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                        <ul class="contact-info">
+                            <li>
+                                <div>
+                                    <div class="info-icon-div">
+                                        <svg class="d-block info-icon" width="25" height="25" fill="currentColor">
+                                            <use xlink:href="/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h5>Dirección</h5>
+                                        <p>Av. Recta Martinolli 6701, X5021, Córdoba</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="info-icon-div">
+                                        <svg class="d-block info-icon" width="25" height="25" fill="currentColor">
+                                            <use xlink:href="/bootstrap-icons/bootstrap-icons.svg#telephone" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h5>Teléfono</h5>
+                                        <p>351 238 1020</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="info-icon-div">
+                                        <svg class="d-block info-icon" width="25" height="25" fill="currentColor">
+                                            <use xlink:href="/bootstrap-icons/bootstrap-icons.svg#envelope" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h5>E-mail</h5>
+                                        <p>uniformesvogel@gmail.com</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="info-icon-div">
+                                        <svg class="d-block info-icon" width="25" height="25" fill="currentColor">
+                                            <use xlink:href="/bootstrap-icons/bootstrap-icons.svg#clock" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h5>Horarios</h5>
+                                        <p>Lunes a Viernes de 8 a 18hs</p>
+                                        <p>Sábados de 9 a 13hs</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('./partials/footer') %>
+    </footer>
+</body>
+
+</html>
